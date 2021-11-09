@@ -1,0 +1,227 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Material Design Lite</title>
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/android-desktop.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.2.1/material.deep_purple-pink.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@2.7.8/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+
+    <style>
+    #view-source {
+      position: fixed;
+      display: block;
+      right: 0;
+      bottom: 0;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      z-index: 900;
+    }
+    .mdl-grid {
+      max-height: 900px;
+    }
+    </style>
+  </head>
+  <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
+        
+        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+          <h3>Data Viewer</h3>
+        </div>
+
+        <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
+          <a href="#overview" class="mdl-layout__tab is-active">Overview</a>
+          <a href="#about" class="mdl-layout__tab">About</a>
+          <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--4dp mdl-color--accent" id="add">
+            <i class="material-icons" role="presentation">add</i>
+            <span class="visuallyhidden">Add</span>
+          </button>
+        </div>
+      </header>
+
+      <main class="mdl-layout__content">
+        <div class="mdl-layout__tab-panel is-active" id="overview">
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <header class="section__play-btn mdl-cell mdl-cell--2-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+              <h2>演示</h2>
+            </header>
+            <div class="mdl-card mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+              <div class="mdl-grid">
+                <div class="mdl-cell mdl-cell--middle mdl-cell--12-col">
+                  <h6>Input:</h6>
+                <!-- </div>
+                <div class="mdl-cell mdl-cell--4-col"> -->
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input type="text" class="mdl-textfield__input" id="Ele1">
+                    <label for="sample6" class="mdl-textfield__label">Element1</label>
+                  </div>
+               <!--  </div>
+
+                <div class="mdl-cell mdl-cell--4-col"> -->
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input type="text" class="mdl-textfield__input" id="Ele2">
+                    <label for="sample6" class="mdl-textfield__label">Element2</label>
+                  </div>
+                </div>
+
+              </div>                            
+              
+              <div class="mdl-cell mdl-cell--10-col" style="margin-left:55px">
+                <h6>Ratio</h6>
+                <td> 
+                  <label class = "mdl-radio mdl-js-radio" for = "option1">
+                    <input type = "radio" id = "option1" name = "gender" 
+                    class = "mdl-radio__button">
+                    <span class = "mdl-radio__label">0:10</span>
+                  </label>
+                </td>
+                <td> 
+                 <label class = "mdl-radio mdl-js-radio" for = "option2">
+                  <input type = "radio" id = "option2" name = "gender" 
+                  class = "mdl-radio__button" checked>
+                  <span class = "mdl-radio__label">1:9</span>
+                  </label>
+                </td>
+                <td> 
+                  <label class = "mdl-radio mdl-js-radio" for = "option3">
+                    <input type = "radio" id = "option3" name = "gender" 
+                    class = "mdl-radio__button">
+                    <span class = "mdl-radio__label">2:8</span>
+                  </label>
+                </td>
+                <td> 
+                  <label class = "mdl-radio mdl-js-radio" for = "option4">
+                    <input type = "radio" id = "option4" name = "gender" 
+                    class = "mdl-radio__button">
+                    <span class = "mdl-radio__label">3:7</span>
+                  </label>
+                </td>
+                <td> 
+                  <label class = "mdl-radio mdl-js-radio" for = "option5">
+                    <input type = "radio" id = "option5" name = "gender" 
+                    class = "mdl-radio__button">
+                    <span class = "mdl-radio__label">4:6</span>
+                  </label>
+                </td>
+                <td> 
+                  <label class = "mdl-radio mdl-js-radio" for = "option6">
+                    <input type = "radio" id = "option6" name = "gender" 
+                    class = "mdl-radio__button">
+                    <span class = "mdl-radio__label">5:5</span>
+                  </label>
+                </td>
+                <td> 
+                  <label class = "mdl-radio mdl-js-radio" for = "option7">
+                    <input type = "radio" id = "option7" name = "gender" 
+                    class = "mdl-radio__button">
+                    <span class = "mdl-radio__label">6:4</span>
+                  </label>
+                </td>
+
+                <td> 
+                  <label class = "mdl-radio mdl-js-radio" for = "option8">
+                    <input type = "radio" id = "option8" name = "gender" 
+                    class = "mdl-radio__button">
+                    <span class = "mdl-radio__label">7:3</span>
+                  </label>
+                </td>
+
+                <td> 
+                  <label class = "mdl-radio mdl-js-radio" for = "option9">
+                    <input type = "radio" id = "option9" name = "gender" 
+                    class = "mdl-radio__button">
+                    <span class = "mdl-radio__label">8:2</span>
+                  </label>
+                </td>
+
+                <td> 
+                  <label class = "mdl-radio mdl-js-radio" for = "option10">
+                    <input type = "radio" id = "option10" name = "gender" 
+                    class = "mdl-radio__button">
+                    <span class = "mdl-radio__label">9:1</span>
+                  </label>
+                </td>
+
+                <td> 
+                  <label class = "mdl-radio mdl-js-radio" for = "option11">
+                    <input type = "radio" id = "option11" name = "gender" 
+                    class = "mdl-radio__button">
+                    <span class = "mdl-radio__label">10:0</span>
+                  </label>
+                </td>
+              </div>
+
+              <div class="mdl-cell mdl-cell--1-col">
+                <div class="mdl-card__actions mdl-typography--text-right">
+                  <h6></h6>
+                  <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+                  type="submit" id="submit-btn">GET
+                  </button>
+                </div>
+              </div>
+
+            </div>
+
+          </section>
+
+
+
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <header class="section__play-btn mdl-cell mdl-cell--2-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+              <h2>结果</h2>
+            </header>
+            <div class="mdl-card mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+              <div class="mdl-card__supporting-text">
+                <h4>Results</h4>
+                <div id="formula">
+                  I:Br, Ratio $$ E = mc^2$$
+                </div>
+              </div>
+              
+            </div>
+          </section>
+
+        </div>
+
+        <div class="mdl-layout__tab-panel" id="about">
+          <section class="section--center mdl-grid mdl-grid--no-spacing">
+            <h3>A data viewer</h3>
+          </section>
+        </div>
+
+      </main>
+    </div>
+    <a href="https://github.com/google/material-design-lite/blob/mdl-1.x/templates/text-only/" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">View Source</a>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.2.1/material.min.js"></script>
+  </body>
+</html>
