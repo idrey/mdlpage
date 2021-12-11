@@ -2,7 +2,7 @@ var jsonData;
 $.getJSON("data.json", function(data){
 	jsonData = data;
 });
-var full_data = JSON.parse(jsonData);
+var full_data;
 
 function setResult() {
 	var e1 = document.getElementById("Ele1").value;
