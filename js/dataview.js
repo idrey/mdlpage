@@ -1,8 +1,7 @@
-var jsonData;
-$.getJSON("data.json", function(data){
-	jsonData = data;
-});
 var full_data;
+$.getJSON("data.json", function(data){
+	full_data = data;
+});
 
 function setResult() {
 	var e1 = document.getElementById("Ele1").value;
