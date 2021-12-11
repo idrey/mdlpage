@@ -1,1 +1,0 @@
-获取<input>值 document.getElementById("name").value
